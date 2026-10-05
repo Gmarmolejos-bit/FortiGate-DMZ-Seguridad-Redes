@@ -9,7 +9,7 @@ En el video se muestra el funcionamiento general de la topología y las principa
 ---
 ## Diagrama lógico
 
-![Diagrama lógico de la infraestructura](diagramas/02_diagrama_logico.png)
+![Diagrama lógico de la infraestructura](./diagramas/02_diagrama_logico.png)
 
 ## 📌 Propósito del laboratorio
 

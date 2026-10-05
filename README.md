@@ -45,11 +45,11 @@ Los usuarios se encuentran separados en:
 
 ### Captura de la topología en GNS3
 
-![Topología de la infraestructura](./diagramas/01_topologia_gns3.png)
+![Topología de la infraestructura](./Diagramas/01_topologia_gns3.png)
 
 ### Diagrama lógico
 
-![Diagrama lógico de la infraestructura](./diagramas/02_diagrama_logico.png)
+![Diagrama lógico de la infraestructura](./Diagramas/02_diagrama_logico.png)
 
 ---
 

@@ -146,13 +146,15 @@ Durante las pruebas se confirmó que el servidor WEB-CAJA es accesible desde PC1
 
 ## 🚫 Restricción de VLAN 10 al Sistema de Inventario
 
-El servidor del Sistema de Inventario utiliza:
+El servidor del Sistema de Inventario utiliza la dirección:
 
 `10.12.48.131`
 
-Al intentar acceder desde VLAN 10, la conexión no fue permitida.
+Para impedir el acceso desde VLAN 10 se configuró un perfil de Web Filter en FortiGate que bloquea el acceso a esta dirección.
 
-De esta forma se comprobó que VLAN 10 puede acceder al Sistema de Caja, pero no al Sistema de Inventario.
+Durante la prueba se intentó abrir el Sistema de Inventario desde un equipo ubicado en VLAN 10. FortiGate interceptó la solicitud y mostró una página de bloqueo indicando que el acceso no estaba permitido.
+
+De esta forma se comprobó visualmente que VLAN 10 puede acceder al Sistema de Caja, pero tiene restringido el acceso al Sistema de Inventario.
 
 ---
 

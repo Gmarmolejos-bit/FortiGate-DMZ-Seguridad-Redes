@@ -1,0 +1,38 @@
+WEB-INVENTARIO - Configuracion documentada
+==========================================
+
+Rol:
+Servidor web del Sistema de Inventario ubicado en la DMZ.
+
+Red:
+IP: 10.12.48.131
+Mascara: 255.255.255.240 (/28)
+Gateway: 10.12.48.129
+DNS: 10.12.48.129
+
+Servicios:
+- Nginx
+  Puerto: TCP/80
+  Estado verificado: escuchando en 0.0.0.0:80
+
+- OpenSSH Server
+  Puerto: TCP/22
+  Estado verificado: sshd escuchando en el puerto 22
+
+Contenido web:
+Ruta principal:
+  /var/www/html/index.html
+
+Pagina configurada:
+  Sistema de Inventario
+
+Pruebas realizadas:
+- Acceso HTTP desde VLAN 10: BLOQUEADO
+- Acceso SSH desde VLAN 20: PERMITIDO
+- Acceso SSH desde VLAN 10: BLOQUEADO
+- Acceso desde DMZ hacia redes LAN: BLOQUEADO
+- Acceso general a Internet desde la DMZ: BLOQUEADO
+
+Comandos de verificacion utilizados:
+  ss -lntp | grep ':80'
+  ss -lntp | grep ':22'

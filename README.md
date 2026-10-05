@@ -48,7 +48,7 @@ Los usuarios se encuentran separados en:
 
 El diagrama de la topología se encuentra a continuación:
 
-![Topología de la infraestructura](diagramas/topologia.png)
+![Topología de la infraestructura](Diagramas/01_topologia_gns3.png)
 
 ---
 

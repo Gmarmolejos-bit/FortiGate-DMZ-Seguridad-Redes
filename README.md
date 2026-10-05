@@ -7,6 +7,9 @@
 En el video se muestra el funcionamiento general de la topología y las principales pruebas realizadas para comprobar que las políticas de seguridad están funcionando correctamente.
 
 ---
+## Diagrama lógico
+
+![Diagrama lógico de la infraestructura](diagramas/02_diagrama_logico.png)
 
 ## 📌 Propósito del laboratorio
 

@@ -1,0 +1,31 @@
+DB-SERVER - Configuracion documentada
+=====================================
+
+Rol:
+Servidor de base de datos ubicado en la DMZ.
+
+Red:
+IP: 10.12.48.132
+Mascara: 255.255.255.240 (/28)
+Gateway: 10.12.48.129
+DNS: 10.12.48.129
+
+Servicios:
+- MariaDB
+  Puerto: TCP/3306
+  Bind address: 10.12.48.132
+  Estado verificado: mariadbd escuchando en 10.12.48.132:3306
+
+- OpenSSH Server
+  Puerto: TCP/22
+  Estado verificado: sshd escuchando en el puerto 22
+
+Pruebas realizadas:
+- Acceso SSH desde VLAN 20: PERMITIDO
+- Acceso SSH desde VLAN 10: BLOQUEADO
+- Acceso desde DMZ hacia redes LAN: BLOQUEADO
+- Acceso general a Internet desde la DMZ: BLOQUEADO
+
+Comandos de verificacion utilizados:
+  ss -lntp | grep ':3306'
+  ss -lntp | grep ':22'
